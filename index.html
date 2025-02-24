@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>featness - Restaurante Fitness al Peso</title>
+    <meta name="description" content="featness es un restaurante fitness al peso en Sevilla, ideal para los amantes de la dieta saludable. ¡Regístrate y obtén un 10% de descuento!">
+    <meta name="keywords" content="restaurante fitness, comida al peso, dieta saludable, Sevilla, descuento fitness">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 0;
+        }
+        .container {
+            width: 80%;
+            margin: 0 auto;
+            text-align: center;
+        }
+        header {
+            background-color: #2d5e2e;
+            color: white;
+            padding: 20px 0;
+        }
+        h1 {
+            font-size: 2.5rem;
+            margin-bottom: 10px;
+        }
+        p {
+            font-size: 1.2rem;
+            line-height: 1.6;
+            margin: 20px 0;
+        }
+        .cta-btn {
+            background-color: #ff9800;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.5rem;
+            text-decoration: none;
+            border-radius: 5px;
+            transition: background-color 0.3s;
+        }
+        .cta-btn:hover {
+            background-color: #f57c00;
+        }
+        form {
+            margin-top: 20px;
+        }
+        input[type="text"], input[type="email"] {
+            padding: 10px;
+            width: 80%;
+            max-width: 400px;
+            margin: 10px 0;
+            border-radius: 5px;
+            border: 1px solid #ccc;
+        }
+        input[type="submit"] {
+            background-color: #4CAF50;
+            color: white;
+            padding: 15px 30px;
+            font-size: 1.2rem;
+            border-radius: 5px;
+            border: none;
+            cursor: pointer;
+        }
+        input[type="submit"]:hover {
+            background-color: #45a049;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <h1>featness</h1>
+            <p>Restaurante Fitness al Peso</p>
+        </div>
+    </header>
+
+    <div class="container">
+        <p>Me imagino que conocerás esta persona de apellido difícilmente pronunciable: Arnold Schwarzenegger,</p>
+        <p>se dice que estaba tan obsesionado con el gimnasio que cuando murió su hermano prefirió no asistir a su funeral porque no podía faltar a su entrenamiento,</p>
+        <p>nosotros lo vemos un poco excesivo,</p>
+        <p>aunque gracias a este nuevo restaurante lo que nunca faltarás es a tu dieta.</p>
+
+        <p>Si quieres ser el primero en probarlo es aquí</p>
+
+        <!-- Formulario de registro -->
+        <form id="registration-form" action="https://script.google.com/macros/s/AKfycbwa_kfrk7rY4kwOcKLJfS93387luG657S94xMcoTZz6I2iTVSuWLiYwdmyxmtMYTT_HYw/exec" method="GET">
+            <input type="text" name="name" placeholder="Tu nombre" required>
+            <input type="email" name="email" placeholder="Tu correo electrónico" required>
+            <input type="submit" value="Regístrate ya y obtén un 10% de descuento">
+        </form>
+
+        <p>Si no quizás este proyecto nunca salga adelante y tendrás que fallar a tu dieta.</p>
+    </div>
+
+    <script>
+        // Enviar formulario a Google Sheets
+        document.getElementById('registration-form').addEventListener('submit', function(e) {
+            e.preventDefault(); // Prevenir el comportamiento por defecto de envío del formulario
+
+            // Validar los campos
+            var name = document.querySelector('input[name="name"]').value;
+            var email = document.querySelector('input[name="email"]').value;
+
+            if(name && email) {
+                this.submit(); // Enviar formulario
+            } else {
+                alert('Por favor, completa todos los campos.');
+            }
+        });
+    </script>
+</body>
+</html>
